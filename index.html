@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>MQ-Diploma</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>mq-diploma</title>
+</head>
+
+</html>
+
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-logo">
-        <a class="logo-link" href="#0">
-          <img class="logo-image" src="svg/noemi-logo.svg" alt="Noemi">
-        </a>
+    <div class="top-panel">
+      <div class="container top-panel__container">
+        <img src="svg/noemi-logo.svg" class="logo-image" alt="Noemi">
         <nav class="menu js-menu">
           <button class="menu__button js-menu__button">
             <span class="menu__button-label">открыть меню</span>
           </button>
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a class="menu-link" href="#home">Главная</a>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#home" class="menu__link">Главная</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Посты</a>
+            <li class="menu__list-item">
+              <a href="#0" class="menu__link">Посты</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Статьи</a>
+            <li class="menu__list-item">
+              <a href="#0" class="menu__link">Статьи</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Теги</a>
+            <li class="menu__list-item">
+              <a href="#0" class="menu__link">Теги</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Темы</a>
+            <li class="menu__list-item">
+              <a href="#0" class="menu__link">Темы</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Контакты</a>
+            <li class="menu__list-item">
+              <a href="#0" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
-      <h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
+    </div>
+    <div class="container">
+      <div class="header__slogan">
+        <h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
+      </div>
     </div>
   </header>
 
@@ -51,6 +57,7 @@
           <a class="card-title-link" href="#0">Сейчас в тренде</a>
         </h2>
       </header>
+
       <div class="section__body">
         <article class="post">
           <div class="post__previewbox">
@@ -61,10 +68,11 @@
                   <li class="card-tag-list-item"><a href="#0" class="tag">Interior</a></li>
                 </ul>
               </div>
+              <h3 class="post__name">Сейчас в тренде: сад на подоконнике</h3>
             </div>
-            <h3 class="title post__name">Сейчас в тренде: сад на подоконнике</h3>
           </div>
         </article>
+
         <article class="post">
           <div class="post__previewbox">
             <div class="post__content cheese">
@@ -73,8 +81,8 @@
                   <li class="card-tag-list-item"><a href="#0" class="tag">Food</a></li>
                 </ul>
               </div>
+              <h3 class="post__name">Сыры на красивых картинках из интернета: какие они на вкус?</h3>
             </div>
-            <h3 class="title post__name">Сыры на красивых картинках из интернета: какие они на вкус?</h3>
           </div>
         </article>
         <article class="post">
@@ -86,7 +94,7 @@
                   <li class="card-tag-list-item"><a href="#0" class="tag">Travel</a></li>
                 </ul>
               </div>
-              <h3 class="title post__name">Собираемся в первый поход в горы</h3>
+              <h3 class="post__name">Собираемся в первый поход в горы</h3>
             </div>
           </div>
         </article>
@@ -99,7 +107,7 @@
                   <li class="card-tag-list-item"><a href="#0" class="tag">Health</a></li>
                 </ul>
               </div>
-              <h3 class="title post__name">Сейчас в тренде: сколько витамина С в лимонах?</h3>
+              <h3 class="post__name">Сейчас в тренде: сколько витамина С в лимонах?</h3>
             </div>
           </div>
         </article>
@@ -466,17 +474,17 @@
               <p>Вы подписаны на e-mail рассылку?</p>
               <br>
               <div class="radio-form">
-                  <p class="radioP">
-                    <input checked type="radio" name="name" id="r1" required />
-                    <label for="r1">
-                      <span class="rerrq"></span>Да
-                    </label>
-                  </p>
-                  <p class="radioP">
-                    <input type="radio" name="name" id="r2" required /><label for="r2">
-                      <span class="rerrq"></span>Нет
-                    </label>
-                  </p>
+                <p class="radioP">
+                  <input checked type="radio" name="name" id="r1" required />
+                  <label for="r1">
+                    <span class="rerrq"></span>Да
+                  </label>
+                </p>
+                <p class="radioP">
+                  <input type="radio" name="name" id="r2" required /><label for="r2">
+                    <span class="rerrq"></span>Нет
+                  </label>
+                </p>
               </div>
             </div>
             <br>
@@ -486,7 +494,7 @@
               <textarea class="textarea field" placeholder="Может, больше рецептов?"></textarea>
             </div>
             <div class="sign-up__row">
-              <button class="button button-submit">Отправить</button>
+              <button class="button button-send">Отправить</button>
             </div>
           </form>
         </div>
@@ -494,5 +502,5 @@
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
     </div>
   </div>
+  <script src="/js/script.js"></script>
 </body>
-</html>
